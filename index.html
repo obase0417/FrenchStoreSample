@@ -1,378 +1,698 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja" class="no-js">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>L'atelier Cuisine Française（ラトリエ キュイジーヌ フランセーズ）｜世田谷・松陰神社前のフレンチレストラン</title>
-<meta name="description" content="東京・世田谷、松陰神社前のフレンチレストラン「L'atelier Cuisine Française（ラトリエ キュイジーヌ フランセーズ）」。市場から届く旬の食材を、フランス仕込みの技法で。平日は1,000円からの日替わりランチも。ランチコース4,200円〜、ディナーコース8,800円〜。">
-<meta property="og:title" content="L'atelier Cuisine Française｜世田谷・松陰神社前のフレンチレストラン">
-<meta property="og:description" content="旬の食材を、フランス仕込みの技法で。世田谷・松陰神社前の小さなフレンチレストラン。">
-<meta property="og:type" content="website">
-<meta property="og:image" content="assets/img/scene/exterior.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-<!-- loading -->
-<div class="loading" aria-hidden="true">
-  <div>
-    <div class="loading__logo">L'atelier</div>
-    <div class="loading__bar"></div>
-  </div>
-</div>
-
-<!-- custom cursor -->
-<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__text" id="cursorText"></span></div>
-
-<!-- header -->
-<header class="header is-over">
-  <a class="header__logo" href="index.html">L'atelier<small>ラトリエ キュイジーヌ フランセーズ</small></a>
-  <nav class="header__nav">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="concept.html">Concept</a>
-    <a href="menu.html">Menu</a>
-    <a href="course.html">Course</a>
-    <a href="#access">Access</a>
-    <a class="header__tel" href="tel:0312345678">03-1234-5678</a>
-  </nav>
-  <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="メニューを開く">
-    <span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span>
-  </button>
-</header>
-
-<!-- drawer -->
-<nav class="drawer" id="drawer" aria-hidden="true">
-  <ul class="drawer__list">
-    <li><a href="index.html"><span class="drawer__en">Home</span><span class="drawer__jp">トップ</span></a></li>
-    <li><a href="concept.html"><span class="drawer__en">Concept</span><span class="drawer__jp">私たちについて</span></a></li>
-    <li><a href="menu.html"><span class="drawer__en">Menu</span><span class="drawer__jp">お品書き</span></a></li>
-    <li><a href="course.html"><span class="drawer__en">Course</span><span class="drawer__jp">コース料理</span></a></li>
-    <li><a href="index.html#access"><span class="drawer__en">Access</span><span class="drawer__jp">店舗案内</span></a></li>
-  </ul>
-  <div class="drawer__foot">
-    〒154-0023 東京都世田谷区若林3-18-6 1F<br>
-    Lunch 11:30–15:00 / Dinner 17:30–22:30<br>
-    定休日：水曜日・第2火曜日
-    <a class="tel" href="tel:0312345678">03-1234-5678</a>
-  </div>
-</nav>
-
-<main>
-
-  <!-- ============ KV ============ -->
-  <section class="kv">
-    <div class="kv__bg">
-      <div class="kv__bg__item kv__bg__item--exterior"><img src="assets/img/scene/exterior.jpg" srcset="assets/img/scene/exterior-960.jpg 960w, assets/img/scene/exterior.jpg 1536w" sizes="100vw" alt="夕暮れのL'atelier外観" fetchpriority="high"></div>
-      <div class="kv__bg__item"><img src="assets/img/scene/interior.jpg" srcset="assets/img/scene/interior-960.jpg 960w, assets/img/scene/interior.jpg 1536w" sizes="100vw" alt="灯りのともる店内" loading="lazy"></div>
-      <div class="kv__bg__item kv__bg__item--chef"><img src="assets/img/scene/chef.jpg" srcset="assets/img/scene/chef-960.jpg 960w, assets/img/scene/chef.jpg 1536w" sizes="100vw" alt="厨房で仕上げをするシェフ" loading="lazy"></div>
-      <div class="kv__bg__item"><img src="assets/img/dish/canard.jpg" alt="鴨胸肉のロースト" loading="lazy"></div>
-    </div>
-
-    <div class="kv__body">
-      <p class="kv__sub" data-kv-after>Cuisine Française — Setagaya, Tokyo</p>
-      <h1 class="kv__title">
-        <span class="line" data-split-hero>L'atelier</span>
-      </h1>
-      <p class="kv__lead" data-kv-after>
-        市場からまっすぐ届いた、その日いちばんの食材を。<br>
-        肩ひじ張らない、けれど確かなフランス料理を。
-      </p>
-    </div>
-
-    <span class="kv__scroll">Scroll<i></i></span>
-  </section>
-
-  <!-- ============ concept teaser ============ -->
-  <section class="sect wrap">
-    <div class="inner duo">
-      <figure class="duo__fig" data-zoom>
-        <img src="assets/img/scene/chef.jpg" srcset="assets/img/scene/chef-960.jpg 960w, assets/img/scene/chef.jpg 1536w" sizes="(min-width: 900px) 50vw, 100vw" alt="皿の仕上げをするシェフ 神谷悠介" loading="lazy">
-        <figcaption>Chef — Yusuke Kamiya</figcaption>
-      </figure>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      L'atelier Cuisine Française（ラトリエ キュイジーヌ
+      フランセーズ）｜世田谷・松陰神社前のフレンチレストラン
+    </title>
+    <meta
+      name="description"
+      content="東京・世田谷、松陰神社前のフレンチレストラン「L'atelier Cuisine Française（ラトリエ キュイジーヌ フランセーズ）」。市場から届く旬の食材を、フランス仕込みの技法で。平日は1,000円からの日替わりランチも。ランチコース4,200円〜、ディナーコース8,800円〜。"
+    />
+    <meta
+      property="og:title"
+      content="L'atelier Cuisine Française｜世田谷・松陰神社前のフレンチレストラン"
+    />
+    <meta
+      property="og:description"
+      content="旬の食材を、フランス仕込みの技法で。世田谷・松陰神社前の小さなフレンチレストラン。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/scene/exterior.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="loading" aria-hidden="true">
       <div>
-        <div class="shead">
-          <span class="shead__en" data-split>Concept</span>
-          <span class="shead__jp" data-reveal data-delay="1">私たちについて</span>
-        </div>
-        <p class="lead" data-reveal data-delay="2">
-          フランス料理には、どこか敷居が高いという印象がついてまわります。<br>
-          けれど現地の厨房で過ごした日々が教えてくれたのは、まったく逆のことでした。フランス料理はもともと、人の暮らしのすぐ隣にあるものだということ。
-        </p>
-        <p class="lead" data-reveal data-delay="3" style="margin-top:1.4em">
-          記念日の食卓にも、仕事帰りの一皿にも。<br>
-          そのどちらにも寄り添える店でありたいと願いながら、今日も厨房に立っています。
-        </p>
-        <p data-reveal data-delay="4" style="margin-top:2.2em">
-          <a class="btn" href="concept.html" data-cursor-text="View|more">Read more<i></i></a>
-        </p>
+        <div class="loading__logo">L'atelier</div>
+        <div class="loading__bar"></div>
       </div>
     </div>
-  </section>
 
-  <!-- ============ marquee ============ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__row">
-      <span>Cuisine Française <em>◆</em> L'atelier <em>◆</em> Depuis 2012 <em>◆</em> </span>
-      <span>Cuisine Française <em>◆</em> L'atelier <em>◆</em> Depuis 2012 <em>◆</em> </span>
+    <!-- custom cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor__text" id="cursorText"></span>
     </div>
-  </div>
 
-  <!-- ============ cuisine ============ -->
-  <section class="sect sect--dark wrap">
-    <div class="inner">
-      <div class="shead shead--center">
-        <span class="shead__en" data-split>Cuisine</span>
-        <span class="shead__jp" data-reveal data-delay="1">季節のお料理</span>
-      </div>
-      <p class="lead" data-reveal data-delay="2" style="text-align:center;max-width:620px;margin-inline:auto">
-        豊洲と地方の生産者から届く食材にあわせて、お品書きは月に一度書き換えています。<br>ここでご紹介するのは、その一例です。
-      </p>
-
-      <div class="dishes" style="margin-top:clamp(40px,8vw,72px)">
-        <article class="dish" data-reveal>
-          <div class="dish__fig" data-zoom><img src="assets/img/dish/carpaccio.jpg" alt="旬魚のカルパッチョ" loading="lazy"></div>
-          <span class="dish__no">01 — Entrée</span>
-          <h3 class="dish__name">旬魚のカルパッチョ<br>彩り野菜とハーブのマリネ</h3>
-          <p class="dish__desc">その日の白身魚を薄く引き、レモンとオリーブオイルで。</p>
-        </article>
-        <article class="dish" data-reveal data-delay="1">
-          <div class="dish__fig" data-zoom><img src="assets/img/dish/terrine.jpg" alt="フォアグラのテリーヌ" loading="lazy"></div>
-          <span class="dish__no">02 — Entrée</span>
-          <h3 class="dish__name">フォアグラのテリーヌ<br>ブリオッシュを添えて</h3>
-          <p class="dish__desc">当店の定番。ソーテルヌと共にどうぞ。</p>
-        </article>
-        <article class="dish" data-reveal data-delay="2">
-          <div class="dish__fig" data-zoom><img src="assets/img/dish/veloute.jpg" alt="白いんげん豆のヴルーテ" loading="lazy"></div>
-          <span class="dish__no">03 — Potage</span>
-          <h3 class="dish__name">白いんげん豆のヴルーテ<br>冬トリュフの香り</h3>
-          <p class="dish__desc">豆の甘みだけで仕立てた、静かなひと皿。</p>
-        </article>
-        <article class="dish" data-reveal>
-          <div class="dish__fig" data-zoom><img src="assets/img/dish/poisson.jpg" alt="真鯛のポワレ" loading="lazy"></div>
-          <span class="dish__no">04 — Poisson</span>
-          <h3 class="dish__name">真鯛のポワレ<br>ムール貝のブイヨン</h3>
-          <p class="dish__desc">皮はぱりりと、身はしっとりと火を入れて。</p>
-        </article>
-        <article class="dish" data-reveal data-delay="1">
-          <div class="dish__fig" data-zoom><img src="assets/img/dish/roti.jpg" alt="仔羊のロティ" loading="lazy"></div>
-          <span class="dish__no">05 — Viande</span>
-          <h3 class="dish__name">仔羊のロティ<br>赤ワインと黒胡椒のソース</h3>
-          <p class="dish__desc">骨からとったジュを煮詰めた、香り高いソースで。</p>
-        </article>
-        <article class="dish" data-reveal data-delay="2">
-          <div class="dish__fig" data-zoom><img src="assets/img/dish/mille.jpg" alt="苺と薔薇のミルフイユ仕立て" loading="lazy"></div>
-          <span class="dish__no">06 — Dessert</span>
-          <h3 class="dish__name">苺と薔薇の<br>ミルフイユ仕立て</h3>
-          <p class="dish__desc">デザートは月替わり。5〜6種からお選びいただけます。</p>
-        </article>
-      </div>
-
-      <p data-reveal style="margin-top:clamp(40px,8vw,64px);text-align:center">
-        <a class="btn" href="menu.html" data-cursor-text="View|menu">All menu<i></i></a>
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ course teaser ============ -->
-  <section class="sect wrap">
-    <div class="inner duo duo--rev">
-      <figure class="duo__fig" data-zoom>
-        <img src="assets/img/dish/filet.jpg" alt="黒毛和牛フィレのグリエ" loading="lazy">
-        <figcaption>Menu Dégustation</figcaption>
-      </figure>
-      <div>
-        <div class="shead">
-          <span class="shead__en" data-split>Course</span>
-          <span class="shead__jp" data-reveal data-delay="1">コース料理</span>
-        </div>
-        <p class="lead" data-reveal data-delay="2">
-          平日のお昼は、1,000円からの日替わりランチを。<br>
-          ゆっくりお過ごしいただくコースは、ランチ4,200円・ディナー8,800円から。記念日や会食には、少しだけ贅をこらしたコースもご用意しています。
-        </p>
-        <p data-reveal data-delay="3" style="margin-top:2.2em">
-          <a class="btn" href="course.html" data-cursor-text="View|course">View course<i></i></a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 日替わりランチ ============ -->
-  <section class="sect sect--tight sect--deep wrap">
-    <div class="inner--narrow">
-      <div class="daily daily--band" data-reveal>
-        <div class="daily__head">
-          <span class="daily__en">Déjeuner du jour</span>
-          <span class="daily__jp">平日の日替わりランチ</span>
-          <span class="daily__from">¥1,000<em>〜</em><small>税込</small></span>
-        </div>
-
-        <div class="daily__items">
-          <div class="daily__item">
-            <p class="daily__name">日替わりプレート<b>¥1,200</b></p>
-            <p class="daily__desc">その日のメイン一皿、サラダ、自家製パン、コーヒー。</p>
-          </div>
-          <div class="daily__item">
-            <p class="daily__name">パスタランチ<b>¥1,300</b></p>
-            <p class="daily__desc">本日のパスタ2種からお選びいただけます。</p>
-          </div>
-          <div class="daily__item">
-            <p class="daily__name">週替わりランチ<b>¥1,500</b></p>
-            <p class="daily__desc">前菜、メイン、小さなデザートまで。</p>
-          </div>
-        </div>
-
-        <p class="daily__note">
-          平日 11:30〜14:00 限定。ご予約なしでお立ち寄りいただけます。<br>
-          スープランチ1,000円もございます。土日祝はコース料理のみとなります。
-        </p>
-
-        <p style="margin-top:clamp(22px,5vw,32px)">
-          <a class="btn" href="course.html#daily-lunch" data-cursor-text="View|lunch">ランチの詳細<i></i></a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ interior ============ -->
-  <section class="sect sect--deep wrap">
-    <div class="inner">
-      <div class="shead shead--center">
-        <span class="shead__en" data-split>Interior</span>
-        <span class="shead__jp" data-reveal data-delay="1">店内のご案内</span>
-      </div>
-      <figure data-zoom data-reveal data-delay="2">
-        <img src="assets/img/scene/interior.jpg" srcset="assets/img/scene/interior-960.jpg 960w, assets/img/scene/interior.jpg 1536w" sizes="100vw" alt="テーブルの整った店内" loading="lazy">
-      </figure>
-      <p class="lead" data-reveal data-delay="3" style="text-align:center;max-width:620px;margin:clamp(24px,5vw,40px) auto 0">
-        全24席。厨房を囲むように席を配し、火の音や皿の支度がそのまま伝わる造りにしました。<br>
-        奥には4名様までの個室もございます。
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ access ============ -->
-  <section class="sect sect--dark wrap" id="access">
-    <div class="inner">
-      <div class="shead">
-        <span class="shead__en" data-split>Access</span>
-        <span class="shead__jp" data-reveal data-delay="1">店舗案内</span>
-      </div>
-
-      <div class="access">
-        <div class="access__map" data-reveal>
-          <svg viewBox="0 0 400 300" role="img" aria-label="松陰神社前駅から当店までの略地図" style="position:absolute;inset:0;width:100%;height:100%">
-            <rect width="400" height="300" fill="#efe8dc"/>
-            <g stroke="#d9d0c1" stroke-width="16" fill="none">
-              <path d="M-10 96 H410"/><path d="M-10 222 H410"/>
-              <path d="M118 -10 V310"/><path d="M286 -10 V310"/>
-            </g>
-            <g stroke="#e7dfd1" stroke-width="7" fill="none">
-              <path d="M-10 160 H410"/><path d="M200 -10 V310"/>
-            </g>
-            <path d="M-10 40 L410 268" stroke="#c9bda7" stroke-width="11" fill="none"/>
-            <g fill="#8c8175" font-family="sans-serif" font-size="9" letter-spacing="1">
-              <text x="14" y="92">世田谷通り</text>
-              <text x="126" y="290" transform="rotate(-90 126 290)">若林中央通り</text>
-              <text x="300" y="52" transform="rotate(29 300 52)">東急世田谷線</text>
-            </g>
-            <g>
-              <rect x="52" y="18" width="66" height="26" rx="3" fill="#221d18"/>
-              <text x="85" y="35" fill="#f6f2ea" font-family="sans-serif" font-size="9" text-anchor="middle">松陰神社前駅</text>
-            </g>
-            <circle cx="118" cy="40" r="5" fill="#221d18" stroke="#f6f2ea" stroke-width="2"/>
-            <path d="M118 40 L118 96 L232 96 L232 178" stroke="#a4834c" stroke-width="3" stroke-dasharray="7 5" fill="none"/>
-            <g>
-              <path d="M232 178 c-11 0 -20 9 -20 20 c0 15 20 32 20 32 s20 -17 20 -32 c0 -11 -9 -20 -20 -20 z" fill="#a4834c"/>
-              <circle cx="232" cy="198" r="7" fill="#f6f2ea"/>
-              <text x="232" y="252" fill="#221d18" font-family="serif" font-size="12" text-anchor="middle" letter-spacing="1">L'atelier</text>
-            </g>
-            <g fill="#b5aa98" font-family="sans-serif" font-size="8">
-              <text x="300" y="200">若林公園</text>
-              <text x="36" y="200">郵便局</text>
-            </g>
-            <rect x="298" y="262" width="88" height="24" fill="rgba(34,29,24,.75)"/>
-            <text x="342" y="278" fill="#f6f2ea" font-family="sans-serif" font-size="8" text-anchor="middle" letter-spacing="1">駅から徒歩3分</text>
-          </svg>
-        </div>
-
-        <div data-reveal data-delay="1">
-          <dl class="info">
-            <div>
-              <dt>Address</dt>
-              <dd>〒154-0023<br>東京都世田谷区若林3-18-6 1F</dd>
-            </div>
-            <div>
-              <dt>Access</dt>
-              <dd>東急世田谷線「松陰神社前」駅より徒歩3分<br>小田急線「豪徳寺」駅より徒歩12分<br>専用駐車場2台（無料）</dd>
-            </div>
-            <div>
-              <dt>Tel</dt>
-              <dd><a class="en" href="tel:0312345678">03-1234-5678</a><br><span style="font-size:11.5px;color:rgba(246,242,234,.55)">ご予約・お問い合わせはお電話にて承ります</span></dd>
-            </div>
-            <div>
-              <dt>Hours</dt>
-              <dd>Lunch　11:30–15:00（L.O. 14:00）<br>Dinner　17:30–22:30（L.O. 21:00）</dd>
-            </div>
-            <div>
-              <dt>Closed</dt>
-              <dd>水曜日・第2火曜日</dd>
-            </div>
-            <div>
-              <dt>Seats</dt>
-              <dd>24席（テーブル20席／個室4席）<br>貸切は12名様より承ります</dd>
-            </div>
-          </dl>
-          <p style="margin-top:26px;font-size:12px;line-height:2;color:rgba(246,242,234,.6)">
-            サービス料はいただいておりません。<br>
-            アレルギー・苦手な食材は、ご予約時にお知らせいただければ可能な限り対応いたします。
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- footer -->
-<footer class="footer">
-  <div class="inner">
-    <div class="footer__top">
-      <div>
-        <p class="footer__logo">L'atelier<small>ラトリエ キュイジーヌ フランセーズ</small></p>
-        <p class="footer__addr">
-          〒154-0023 東京都世田谷区若林3-18-6 1F<br>
-          Lunch 11:30–15:00 ／ Dinner 17:30–22:30<br>
-          定休日：水曜日・第2火曜日
-        </p>
-        <a class="footer__tel" href="tel:0312345678">03-1234-5678</a>
-      </div>
-      <nav class="footer__nav">
-        <a href="index.html">Home</a>
+    <!-- header -->
+    <header class="header is-over">
+      <a class="header__logo" href="index.html"
+        >L'atelier<small>ラトリエ キュイジーヌ フランセーズ</small></a
+      >
+      <nav class="header__nav">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="concept.html">Concept</a>
         <a href="menu.html">Menu</a>
         <a href="course.html">Course</a>
-        <a href="index.html#access">Access</a>
+        <a href="#access">Access</a>
+        <a class="header__tel" href="tel:0312345678">03-1234-5678</a>
       </nav>
-    </div>
-    <p class="disclaim" style="margin-top:clamp(36px,7vw,56px)">
-      ※ 本サイトはデザインサンプルです。店名・人物名・住所・電話番号・価格などはすべて架空のものであり、実在の店舗・人物とは関係ありません。
-    </p>
-    <div class="footer__bottom">
-      <span>© L'atelier Cuisine Française — Sample Site</span>
-      <span>Designed as a website renewal proposal</span>
-    </div>
-  </div>
-</footer>
+      <button
+        class="burger"
+        type="button"
+        aria-expanded="false"
+        aria-controls="drawer"
+        aria-label="メニューを開く"
+      >
+        <span class="burger__line"></span><span class="burger__line"></span
+        ><span class="burger__line"></span>
+      </button>
+    </header>
 
-<div class="cta-fixed">
-  <a href="tel:0312345678">Tel. 03-1234-5678</a>
-  <a href="index.html#access">Access</a>
-</div>
+    <!-- drawer -->
+    <nav class="drawer" id="drawer" aria-hidden="true">
+      <ul class="drawer__list">
+        <li>
+          <a href="index.html"
+            ><span class="drawer__en">Home</span
+            ><span class="drawer__jp">トップ</span></a
+          >
+        </li>
+        <li>
+          <a href="concept.html"
+            ><span class="drawer__en">Concept</span
+            ><span class="drawer__jp">私たちについて</span></a
+          >
+        </li>
+        <li>
+          <a href="menu.html"
+            ><span class="drawer__en">Menu</span
+            ><span class="drawer__jp">お品書き</span></a
+          >
+        </li>
+        <li>
+          <a href="course.html"
+            ><span class="drawer__en">Course</span
+            ><span class="drawer__jp">コース料理</span></a
+          >
+        </li>
+        <li>
+          <a href="index.html#access"
+            ><span class="drawer__en">Access</span
+            ><span class="drawer__jp">店舗案内</span></a
+          >
+        </li>
+      </ul>
+      <div class="drawer__foot">
+        〒154-0023 東京都世田谷区若林3-18-6 1F<br />
+        Lunch 11:30–15:00 / Dinner 17:30–22:30<br />
+        定休日：水曜日・第2火曜日
+        <a class="tel" href="tel:0312345678">03-1234-5678</a>
+      </div>
+    </nav>
 
-<script src="assets/js/main.js"></script>
-</body>
+    <main>
+      <!-- ============ KV ============ -->
+      <section class="kv">
+        <div class="kv__bg">
+          <div class="kv__bg__item kv__bg__item--exterior">
+            <img
+              src="assets/img/scene/exterior.jpg"
+              srcset="
+                assets/img/scene/exterior-960.jpg  960w,
+                assets/img/scene/exterior.jpg     1536w
+              "
+              sizes="100vw"
+              alt="夕暮れのL'atelier外観"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="kv__bg__item">
+            <img
+              src="assets/img/scene/interior.jpg"
+              srcset="
+                assets/img/scene/interior-960.jpg  960w,
+                assets/img/scene/interior.jpg     1536w
+              "
+              sizes="100vw"
+              alt="灯りのともる店内"
+              loading="lazy"
+            />
+          </div>
+          <div class="kv__bg__item kv__bg__item--chef">
+            <img
+              src="assets/img/scene/chef.jpg"
+              srcset="
+                assets/img/scene/chef-960.jpg  960w,
+                assets/img/scene/chef.jpg     1536w
+              "
+              sizes="100vw"
+              alt="厨房で仕上げをするシェフ"
+              loading="lazy"
+            />
+          </div>
+          <div class="kv__bg__item">
+            <img
+              src="assets/img/dish/canard.jpg"
+              alt="鴨胸肉のロースト"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="kv__body">
+          <p class="kv__sub" data-kv-after>
+            Cuisine Française — Setagaya, Tokyo
+          </p>
+          <h1 class="kv__title">
+            <span class="line" data-split-hero>L'atelier</span>
+          </h1>
+          <p class="kv__lead" data-kv-after>
+            市場から届く旬の食材を。<br />
+            大切な方、家族団欒に寄り添うフランス料理を。
+          </p>
+        </div>
+
+        <span class="kv__scroll">Scroll<i></i></span>
+      </section>
+
+      <!-- ============ concept teaser ============ -->
+      <section class="sect wrap">
+        <div class="inner duo">
+          <figure class="duo__fig" data-zoom>
+            <img
+              src="assets/img/scene/chef.jpg"
+              srcset="
+                assets/img/scene/chef-960.jpg  960w,
+                assets/img/scene/chef.jpg     1536w
+              "
+              sizes="(min-width: 900px) 50vw, 100vw"
+              alt="皿の仕上げをするシェフ 神谷悠介"
+              loading="lazy"
+            />
+            <figcaption>Chef — Yusuke Kamiya</figcaption>
+          </figure>
+          <div>
+            <div class="shead">
+              <span class="shead__en" data-split>Concept</span>
+              <span class="shead__jp" data-reveal data-delay="1"
+                >私たちについて</span
+              >
+            </div>
+            <p class="lead" data-reveal data-delay="2">
+              フランス料理には、どこか敷居が高いという印象がついてまわります。<br />
+              けれど現地の厨房で過ごした日々が教えてくれたのは、まったく逆のことでした。フランス料理はもともと、人の暮らしのすぐ隣にあるものだということ。
+            </p>
+            <p
+              class="lead"
+              data-reveal
+              data-delay="3"
+              style="margin-top: 1.4em"
+            >
+              記念日の食卓にも、仕事帰りの一皿にも。<br />
+              そのどちらにも寄り添える店でありたいと願いながら、今日も厨房に立っています。
+            </p>
+            <p data-reveal data-delay="4" style="margin-top: 2.2em">
+              <a class="btn" href="concept.html" data-cursor-text="View|more"
+                >Read more<i></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ marquee ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__row">
+          <span
+            >Cuisine Française <em>◆</em> L'atelier <em>◆</em> Depuis 2012
+            <em>◆</em>
+          </span>
+          <span
+            >Cuisine Française <em>◆</em> L'atelier <em>◆</em> Depuis 2012
+            <em>◆</em>
+          </span>
+        </div>
+      </div>
+
+      <!-- ============ cuisine ============ -->
+      <section class="sect sect--dark wrap">
+        <div class="inner">
+          <div class="shead shead--center">
+            <span class="shead__en" data-split>Cuisine</span>
+            <span class="shead__jp" data-reveal data-delay="1"
+              >季節のお料理</span
+            >
+          </div>
+          <p
+            class="lead"
+            data-reveal
+            data-delay="2"
+            style="text-align: center; max-width: 620px; margin-inline: auto"
+          >
+            豊洲と地方の生産者から届く食材にあわせて、お品書きは月に一度書き換えています。<br />ここでご紹介するのは、その一例です。
+          </p>
+
+          <div class="dishes" style="margin-top: clamp(40px, 8vw, 72px)">
+            <article class="dish" data-reveal>
+              <div class="dish__fig" data-zoom>
+                <img
+                  src="assets/img/dish/carpaccio.jpg"
+                  alt="旬魚のカルパッチョ"
+                  loading="lazy"
+                />
+              </div>
+              <span class="dish__no">01 — Entrée</span>
+              <h3 class="dish__name">
+                旬魚のカルパッチョ<br />彩り野菜とハーブのマリネ
+              </h3>
+              <p class="dish__desc">
+                その日の白身魚を薄く引き、レモンとオリーブオイルで。
+              </p>
+            </article>
+            <article class="dish" data-reveal data-delay="1">
+              <div class="dish__fig" data-zoom>
+                <img
+                  src="assets/img/dish/terrine.jpg"
+                  alt="フォアグラのテリーヌ"
+                  loading="lazy"
+                />
+              </div>
+              <span class="dish__no">02 — Entrée</span>
+              <h3 class="dish__name">
+                フォアグラのテリーヌ<br />ブリオッシュを添えて
+              </h3>
+              <p class="dish__desc">当店の定番。ソーテルヌと共にどうぞ。</p>
+            </article>
+            <article class="dish" data-reveal data-delay="2">
+              <div class="dish__fig" data-zoom>
+                <img
+                  src="assets/img/dish/veloute.jpg"
+                  alt="白いんげん豆のヴルーテ"
+                  loading="lazy"
+                />
+              </div>
+              <span class="dish__no">03 — Potage</span>
+              <h3 class="dish__name">
+                白いんげん豆のヴルーテ<br />冬トリュフの香り
+              </h3>
+              <p class="dish__desc">豆の甘みだけで仕立てた、静かなひと皿。</p>
+            </article>
+            <article class="dish" data-reveal>
+              <div class="dish__fig" data-zoom>
+                <img
+                  src="assets/img/dish/poisson.jpg"
+                  alt="真鯛のポワレ"
+                  loading="lazy"
+                />
+              </div>
+              <span class="dish__no">04 — Poisson</span>
+              <h3 class="dish__name">真鯛のポワレ<br />ムール貝のブイヨン</h3>
+              <p class="dish__desc">皮はぱりりと、身はしっとりと火を入れて。</p>
+            </article>
+            <article class="dish" data-reveal data-delay="1">
+              <div class="dish__fig" data-zoom>
+                <img
+                  src="assets/img/dish/roti.jpg"
+                  alt="仔羊のロティ"
+                  loading="lazy"
+                />
+              </div>
+              <span class="dish__no">05 — Viande</span>
+              <h3 class="dish__name">
+                仔羊のロティ<br />赤ワインと黒胡椒のソース
+              </h3>
+              <p class="dish__desc">
+                骨からとったジュを煮詰めた、香り高いソースで。
+              </p>
+            </article>
+            <article class="dish" data-reveal data-delay="2">
+              <div class="dish__fig" data-zoom>
+                <img
+                  src="assets/img/dish/mille.jpg"
+                  alt="苺と薔薇のミルフイユ仕立て"
+                  loading="lazy"
+                />
+              </div>
+              <span class="dish__no">06 — Dessert</span>
+              <h3 class="dish__name">苺と薔薇の<br />ミルフイユ仕立て</h3>
+              <p class="dish__desc">
+                デザートは月替わり。5〜6種からお選びいただけます。
+              </p>
+            </article>
+          </div>
+
+          <p
+            data-reveal
+            style="margin-top: clamp(40px, 8vw, 64px); text-align: center"
+          >
+            <a class="btn" href="menu.html" data-cursor-text="View|menu"
+              >All menu<i></i
+            ></a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ course teaser ============ -->
+      <section class="sect wrap">
+        <div class="inner duo duo--rev">
+          <figure class="duo__fig" data-zoom>
+            <img
+              src="assets/img/dish/filet.jpg"
+              alt="黒毛和牛フィレのグリエ"
+              loading="lazy"
+            />
+            <figcaption>Menu Dégustation</figcaption>
+          </figure>
+          <div>
+            <div class="shead">
+              <span class="shead__en" data-split>Course</span>
+              <span class="shead__jp" data-reveal data-delay="1"
+                >コース料理</span
+              >
+            </div>
+            <p class="lead" data-reveal data-delay="2">
+              平日のお昼は、1,000円からの日替わりランチを。<br />
+              ゆっくりお過ごしいただくコースは、ランチ4,200円・ディナー8,800円から。記念日や会食には、少しだけ贅をこらしたコースもご用意しています。
+            </p>
+            <p data-reveal data-delay="3" style="margin-top: 2.2em">
+              <a class="btn" href="course.html" data-cursor-text="View|course"
+                >View course<i></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 日替わりランチ ============ -->
+      <section class="sect sect--tight sect--deep wrap">
+        <div class="inner--narrow">
+          <div class="daily daily--band" data-reveal>
+            <div class="daily__head">
+              <span class="daily__en">Déjeuner du jour</span>
+              <span class="daily__jp">平日の日替わりランチ</span>
+              <span class="daily__from"
+                >¥1,000<em>〜</em><small>税込</small></span
+              >
+            </div>
+
+            <div class="daily__items">
+              <div class="daily__item">
+                <p class="daily__name">日替わりプレート<b>¥1,200</b></p>
+                <p class="daily__desc">
+                  その日のメイン一皿、サラダ、自家製パン、コーヒー。
+                </p>
+              </div>
+              <div class="daily__item">
+                <p class="daily__name">パスタランチ<b>¥1,300</b></p>
+                <p class="daily__desc">
+                  本日のパスタ2種からお選びいただけます。
+                </p>
+              </div>
+              <div class="daily__item">
+                <p class="daily__name">週替わりランチ<b>¥1,500</b></p>
+                <p class="daily__desc">前菜、メイン、小さなデザートまで。</p>
+              </div>
+            </div>
+
+            <p class="daily__note">
+              平日 11:30〜14:00 限定。ご予約なしでお立ち寄りいただけます。<br />
+              スープランチ1,000円もございます。土日祝はコース料理のみとなります。
+            </p>
+
+            <p style="margin-top: clamp(22px, 5vw, 32px)">
+              <a
+                class="btn"
+                href="course.html#daily-lunch"
+                data-cursor-text="View|lunch"
+                >ランチの詳細<i></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ interior ============ -->
+      <section class="sect sect--deep wrap">
+        <div class="inner">
+          <div class="shead shead--center">
+            <span class="shead__en" data-split>Interior</span>
+            <span class="shead__jp" data-reveal data-delay="1"
+              >店内のご案内</span
+            >
+          </div>
+          <figure data-zoom data-reveal data-delay="2">
+            <img
+              src="assets/img/scene/interior.jpg"
+              srcset="
+                assets/img/scene/interior-960.jpg  960w,
+                assets/img/scene/interior.jpg     1536w
+              "
+              sizes="100vw"
+              alt="テーブルの整った店内"
+              loading="lazy"
+            />
+          </figure>
+          <p
+            class="lead"
+            data-reveal
+            data-delay="3"
+            style="
+              text-align: center;
+              max-width: 620px;
+              margin: clamp(24px, 5vw, 40px) auto 0;
+            "
+          >
+            全24席。厨房を囲むように席を配し、火の音や皿の支度がそのまま伝わる造りにしました。<br />
+            奥には4名様までの個室もございます。
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ access ============ -->
+      <section class="sect sect--dark wrap" id="access">
+        <div class="inner">
+          <div class="shead">
+            <span class="shead__en" data-split>Access</span>
+            <span class="shead__jp" data-reveal data-delay="1">店舗案内</span>
+          </div>
+
+          <div class="access">
+            <div class="access__map" data-reveal>
+              <svg
+                viewBox="0 0 400 300"
+                role="img"
+                aria-label="松陰神社前駅から当店までの略地図"
+                style="position: absolute; inset: 0; width: 100%; height: 100%"
+              >
+                <rect width="400" height="300" fill="#efe8dc" />
+                <g stroke="#d9d0c1" stroke-width="16" fill="none">
+                  <path d="M-10 96 H410" />
+                  <path d="M-10 222 H410" />
+                  <path d="M118 -10 V310" />
+                  <path d="M286 -10 V310" />
+                </g>
+                <g stroke="#e7dfd1" stroke-width="7" fill="none">
+                  <path d="M-10 160 H410" />
+                  <path d="M200 -10 V310" />
+                </g>
+                <path
+                  d="M-10 40 L410 268"
+                  stroke="#c9bda7"
+                  stroke-width="11"
+                  fill="none"
+                />
+                <g
+                  fill="#8c8175"
+                  font-family="sans-serif"
+                  font-size="9"
+                  letter-spacing="1"
+                >
+                  <text x="14" y="92">世田谷通り</text>
+                  <text x="126" y="290" transform="rotate(-90 126 290)">
+                    若林中央通り
+                  </text>
+                  <text x="300" y="52" transform="rotate(29 300 52)">
+                    東急世田谷線
+                  </text>
+                </g>
+                <g>
+                  <rect
+                    x="52"
+                    y="18"
+                    width="66"
+                    height="26"
+                    rx="3"
+                    fill="#221d18"
+                  />
+                  <text
+                    x="85"
+                    y="35"
+                    fill="#f6f2ea"
+                    font-family="sans-serif"
+                    font-size="9"
+                    text-anchor="middle"
+                  >
+                    松陰神社前駅
+                  </text>
+                </g>
+                <circle
+                  cx="118"
+                  cy="40"
+                  r="5"
+                  fill="#221d18"
+                  stroke="#f6f2ea"
+                  stroke-width="2"
+                />
+                <path
+                  d="M118 40 L118 96 L232 96 L232 178"
+                  stroke="#a4834c"
+                  stroke-width="3"
+                  stroke-dasharray="7 5"
+                  fill="none"
+                />
+                <g>
+                  <path
+                    d="M232 178 c-11 0 -20 9 -20 20 c0 15 20 32 20 32 s20 -17 20 -32 c0 -11 -9 -20 -20 -20 z"
+                    fill="#a4834c"
+                  />
+                  <circle cx="232" cy="198" r="7" fill="#f6f2ea" />
+                  <text
+                    x="232"
+                    y="252"
+                    fill="#221d18"
+                    font-family="serif"
+                    font-size="12"
+                    text-anchor="middle"
+                    letter-spacing="1"
+                  >
+                    L'atelier
+                  </text>
+                </g>
+                <g fill="#b5aa98" font-family="sans-serif" font-size="8">
+                  <text x="300" y="200">若林公園</text>
+                  <text x="36" y="200">郵便局</text>
+                </g>
+                <rect
+                  x="298"
+                  y="262"
+                  width="88"
+                  height="24"
+                  fill="rgba(34,29,24,.75)"
+                />
+                <text
+                  x="342"
+                  y="278"
+                  fill="#f6f2ea"
+                  font-family="sans-serif"
+                  font-size="8"
+                  text-anchor="middle"
+                  letter-spacing="1"
+                >
+                  駅から徒歩3分
+                </text>
+              </svg>
+            </div>
+
+            <div data-reveal data-delay="1">
+              <dl class="info">
+                <div>
+                  <dt>Address</dt>
+                  <dd>〒154-0023<br />東京都世田谷区若林3-18-6 1F</dd>
+                </div>
+                <div>
+                  <dt>Access</dt>
+                  <dd>
+                    東急世田谷線「松陰神社前」駅より徒歩3分<br />小田急線「豪徳寺」駅より徒歩12分<br />専用駐車場2台（無料）
+                  </dd>
+                </div>
+                <div>
+                  <dt>Tel</dt>
+                  <dd>
+                    <a class="en" href="tel:0312345678">03-1234-5678</a
+                    ><br /><span
+                      style="
+                        font-size: 11.5px;
+                        color: rgba(246, 242, 234, 0.55);
+                      "
+                      >ご予約・お問い合わせはお電話にて承ります</span
+                    >
+                  </dd>
+                </div>
+                <div>
+                  <dt>Hours</dt>
+                  <dd>
+                    Lunch　11:30–15:00（L.O. 14:00）<br />Dinner　17:30–22:30（L.O.
+                    21:00）
+                  </dd>
+                </div>
+                <div>
+                  <dt>Closed</dt>
+                  <dd>水曜日・第2火曜日</dd>
+                </div>
+                <div>
+                  <dt>Seats</dt>
+                  <dd>
+                    24席（テーブル20席／個室4席）<br />貸切は12名様より承ります
+                  </dd>
+                </div>
+              </dl>
+              <p
+                style="
+                  margin-top: 26px;
+                  font-size: 12px;
+                  line-height: 2;
+                  color: rgba(246, 242, 234, 0.6);
+                "
+              >
+                サービス料はいただいておりません。<br />
+                アレルギー・苦手な食材は、ご予約時にお知らせいただければ可能な限り対応いたします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <div class="footer__top">
+          <div>
+            <p class="footer__logo">
+              L'atelier<small>ラトリエ キュイジーヌ フランセーズ</small>
+            </p>
+            <p class="footer__addr">
+              〒154-0023 東京都世田谷区若林3-18-6 1F<br />
+              Lunch 11:30–15:00 ／ Dinner 17:30–22:30<br />
+              定休日：水曜日・第2火曜日
+            </p>
+            <a class="footer__tel" href="tel:0312345678">03-1234-5678</a>
+          </div>
+          <nav class="footer__nav">
+            <a href="index.html">Home</a>
+            <a href="concept.html">Concept</a>
+            <a href="menu.html">Menu</a>
+            <a href="course.html">Course</a>
+            <a href="index.html#access">Access</a>
+          </nav>
+        </div>
+        <p class="disclaim" style="margin-top: clamp(36px, 7vw, 56px)">
+          ※
+          本サイトはデザインサンプルです。店名・人物名・住所・電話番号・価格などはすべて架空のものであり、実在の店舗・人物とは関係ありません。
+        </p>
+        <div class="footer__bottom">
+          <span>© L'atelier Cuisine Française — Sample Site</span>
+          <span>Designed as a website renewal proposal</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cta-fixed">
+      <a href="tel:0312345678">Tel. 03-1234-5678</a>
+      <a href="index.html#access">Access</a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
