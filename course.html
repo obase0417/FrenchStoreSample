@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course コース料理｜L'atelier Cuisine Française（ラトリエ キュイジーヌ フランセーズ）</title>
+<meta name="description" content="世田谷・松陰神社前のフレンチレストラン「L'atelier（ラトリエ）」のコース料理。平日は1,000円からの日替わりランチ、コースはランチ4,200円・ディナー8,800円から。記念日・会食・貸切のご相談も承ります。">
+<meta property="og:title" content="Course コース料理｜L'atelier Cuisine Française">
+<meta property="og:type" content="article">
+<meta property="og:image" content="assets/img/dish/filet.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="loading" aria-hidden="true">
+  <div>
+    <div class="loading__logo">L'atelier</div>
+    <div class="loading__bar"></div>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__text" id="cursorText"></span></div>
+
+<header class="header is-over">
+  <a class="header__logo" href="index.html">L'atelier<small>ラトリエ キュイジーヌ フランセーズ</small></a>
+  <nav class="header__nav">
+    <a href="index.html">Home</a>
+    <a href="concept.html">Concept</a>
+    <a href="menu.html">Menu</a>
+    <a href="course.html" aria-current="page">Course</a>
+    <a href="index.html#access">Access</a>
+    <a class="header__tel" href="tel:0312345678">03-1234-5678</a>
+  </nav>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="メニューを開く">
+    <span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span>
+  </button>
+</header>
+
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <ul class="drawer__list">
+    <li><a href="index.html"><span class="drawer__en">Home</span><span class="drawer__jp">トップ</span></a></li>
+    <li><a href="concept.html"><span class="drawer__en">Concept</span><span class="drawer__jp">私たちについて</span></a></li>
+    <li><a href="menu.html"><span class="drawer__en">Menu</span><span class="drawer__jp">お品書き</span></a></li>
+    <li><a href="course.html"><span class="drawer__en">Course</span><span class="drawer__jp">コース料理</span></a></li>
+    <li><a href="index.html#access"><span class="drawer__en">Access</span><span class="drawer__jp">店舗案内</span></a></li>
+  </ul>
+  <div class="drawer__foot">
+    〒154-0023 東京都世田谷区若林3-18-6 1F<br>
+    Lunch 11:30–15:00 / Dinner 17:30–22:30<br>
+    定休日：水曜日・第2火曜日
+    <a class="tel" href="tel:0312345678">03-1234-5678</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="phero">
+    <img src="assets/img/dish/filet.jpg" alt="黒毛和牛フィレのグリエ">
+    <div class="phero__body">
+      <h1 class="phero__en" data-split-hero>Course</h1>
+      <p class="phero__jp" data-kv-after>コース料理</p>
+    </div>
+  </section>
+
+  <!-- ============ intro ============ -->
+  <section class="sect sect--tight wrap">
+    <div class="inner--narrow" style="text-align:center">
+      <p class="lead" data-reveal>
+        季節ごとに、コースの中身は少しずつ姿を変えます。<br>
+        どのコースも、その日の仕入れから組み立てています。<br>
+        当日お席にてご注文いただけますが、ご予約いただけますとより丁寧にご用意できます。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 日替わりランチ ============ -->
+  <section class="sect sect--tight wrap" id="daily-lunch">
+    <div class="inner--narrow">
+      <div class="shead">
+        <span class="shead__en" data-split>Déjeuner du jour</span>
+        <span class="shead__jp" data-reveal data-delay="1">平日の日替わりランチ　11:30〜14:00</span>
+      </div>
+
+      <div class="daily" data-reveal data-delay="2">
+        <div class="daily__head">
+          <span class="daily__en">Everyday</span>
+          <span class="daily__jp">気軽なお昼に</span>
+          <span class="daily__from">¥1,000<em>〜</em><small>税込</small></span>
+        </div>
+
+        <div class="daily__items">
+          <div class="daily__item">
+            <p class="daily__name">スープランチ<b>¥1,000</b></p>
+            <p class="daily__desc">本日のスープ、自家製パン、コーヒー。<br>軽めに済ませたい日に。</p>
+          </div>
+          <div class="daily__item">
+            <p class="daily__name">日替わりプレート<b>¥1,200</b></p>
+            <p class="daily__desc">その日のメイン一皿、サラダ、自家製パン、コーヒー。<br>黒板でその日の内容をご覧いただけます。</p>
+          </div>
+          <div class="daily__item">
+            <p class="daily__name">パスタランチ<b>¥1,300</b></p>
+            <p class="daily__desc">本日のパスタ2種からお選びいただけます。<br>サラダ、自家製パン、コーヒー付き。</p>
+          </div>
+          <div class="daily__item">
+            <p class="daily__name">週替わりランチ<b>¥1,500</b></p>
+            <p class="daily__desc">前菜、メイン、自家製パン、小さなデザート、コーヒー。<br>いちばんよく出るお昼です。</p>
+          </div>
+          <div class="daily__item">
+            <p class="daily__name">＋ デザート<b>+¥300</b></p>
+            <p class="daily__desc">本日のデセールをお付けできます。</p>
+          </div>
+          <div class="daily__item">
+            <p class="daily__name">＋ グラスワイン<b>+¥500</b></p>
+            <p class="daily__desc">お昼のグラスワインもどうぞ。</p>
+          </div>
+        </div>
+
+        <p class="daily__note">
+          平日（月・火・木・金）のランチタイム限定です。土日祝は下記のコースのみとなります。<br>
+          ご予約なしでお立ち寄りいただけます。数に限りがあり、なくなり次第終了となります。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ déjeuner ============ -->
+  <section class="sect sect--deep wrap">
+    <div class="inner">
+      <div class="shead">
+        <span class="shead__en" data-split>Déjeuner</span>
+        <span class="shead__jp" data-reveal data-delay="1">ランチコース　11:30〜15:00（L.O. 14:00）／ 土日祝も承ります</span>
+      </div>
+
+      <div class="courses">
+
+        <article class="course" data-reveal>
+          <span class="course__tag course__tag--ghost" aria-hidden="true">-</span>
+          <h3 class="course__name">Prix Fixe</h3>
+          <p class="course__jp">プリフィクス ランチ</p>
+          <p class="course__price">¥4,200<small>税込</small></p>
+          <ul class="course__flow">
+            <li>アミューズ</li>
+            <li>本日の前菜</li>
+            <li>魚料理 または 肉料理</li>
+            <li>自家製パン</li>
+            <li>本日のデセール</li>
+            <li>コーヒー または 紅茶</li>
+          </ul>
+          <p class="course__note">前菜・メインはその日の数種からお選びいただけます。</p>
+        </article>
+
+        <article class="course course--feat" data-reveal data-delay="1">
+          <span class="course__tag">POPULAR</span>
+          <h3 class="course__name">Saison</h3>
+          <p class="course__jp">季節のランチコース</p>
+          <p class="course__price">¥5,800<small>税込</small></p>
+          <ul class="course__flow">
+            <li>アミューズ</li>
+            <li>冷前菜</li>
+            <li>温前菜</li>
+            <li>魚料理</li>
+            <li>肉料理</li>
+            <li>自家製パン</li>
+            <li>本日のデセール</li>
+            <li>コーヒー または 紅茶</li>
+          </ul>
+          <p class="course__note">いちばんよくお選びいただくコースです。<br>+¥1,600 でフォアグラのポワレに変更できます。</p>
+        </article>
+
+        <article class="course" data-reveal data-delay="2">
+          <span class="course__tag course__tag--ghost" aria-hidden="true">-</span>
+          <h3 class="course__name">Spécial</h3>
+          <p class="course__jp">スペシャル ランチ</p>
+          <p class="course__price">¥7,500<small>税込</small></p>
+          <ul class="course__flow">
+            <li>アミューズ</li>
+            <li>フォアグラのテリーヌ</li>
+            <li>本日の温前菜</li>
+            <li>魚料理</li>
+            <li>黒毛和牛のグリエ</li>
+            <li>自家製パン</li>
+            <li>デセール 二種</li>
+            <li>コーヒー または 紅茶</li>
+          </ul>
+          <p class="course__note">お昼にゆっくりお過ごしいただく方に。<br>ランチタイムにディナーコースのご注文も承ります。</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ image break ============ -->
+  <figure data-zoom data-reveal style="margin:0">
+    <img src="assets/img/dish/canard.jpg" alt="鴨胸肉のロースト" loading="lazy" style="width:100%;max-height:60vh;object-fit:cover">
+  </figure>
+
+  <!-- ============ dîner ============ -->
+  <section class="sect wrap">
+    <div class="inner">
+      <div class="shead">
+        <span class="shead__en" data-split>Dîner</span>
+        <span class="shead__jp" data-reveal data-delay="1">ディナーコース　17:30〜22:30（L.O. 21:00）</span>
+      </div>
+
+      <div class="courses">
+
+        <article class="course" data-reveal>
+          <span class="course__tag course__tag--ghost" aria-hidden="true">-</span>
+          <h3 class="course__name">Court</h3>
+          <p class="course__jp">気軽に楽しむコース</p>
+          <p class="course__price">¥8,800<small>税込</small></p>
+          <ul class="course__flow">
+            <li>アミューズ</li>
+            <li>本日の前菜</li>
+            <li>スープ</li>
+            <li>魚料理</li>
+            <li>肉料理</li>
+            <li>自家製パン</li>
+            <li>デセール</li>
+            <li>コーヒー または 紅茶</li>
+          </ul>
+          <p class="course__note">はじめてのご来店にも。<br>グラスワイン3種のペアリング +¥3,000。</p>
+        </article>
+
+        <article class="course course--feat" data-reveal data-delay="1">
+          <span class="course__tag">RECOMMENDED</span>
+          <h3 class="course__name">Saison</h3>
+          <p class="course__jp">季節のディナーコース</p>
+          <p class="course__price">¥13,200<small>税込</small></p>
+          <ul class="course__flow">
+            <li>アミューズ 二種</li>
+            <li>冷前菜</li>
+            <li>フォアグラのポワレ</li>
+            <li>スープ</li>
+            <li>本日の魚料理</li>
+            <li>黒毛和牛のグリエ</li>
+            <li>自家製パン</li>
+            <li>デセール 二種</li>
+            <li>小菓子・コーヒー</li>
+          </ul>
+          <p class="course__note">記念日のお食事に。<br>グラスワイン5種のペアリング +¥5,500。</p>
+        </article>
+
+        <article class="course" data-reveal data-delay="2">
+          <span class="course__tag">RÉSERVATION</span>
+          <h3 class="course__name">Dégustation</h3>
+          <p class="course__jp">おまかせコース（要予約）</p>
+          <p class="course__price">¥18,000<small>税込</small></p>
+          <ul class="course__flow">
+            <li>アミューズ 三種</li>
+            <li>その日の冷前菜</li>
+            <li>活オマール海老の一皿</li>
+            <li>フォアグラのポワレ</li>
+            <li>スープ</li>
+            <li>本日の魚料理</li>
+            <li>特選和牛のグリエ</li>
+            <li>自家製パン</li>
+            <li>デセール 三種</li>
+            <li>小菓子・コーヒー</li>
+          </ul>
+          <p class="course__note">3日前までのご予約をお願いいたします。<br>食材はその日の最良のものに差し替わることがございます。</p>
+        </article>
+
+      </div>
+
+      <p class="disclaim" data-reveal style="margin-top:clamp(40px,8vw,60px)">
+        価格はすべて税込表示です。サービス料はいただいておりません。<br>
+        ご予算に合わせたコースもご相談いただけます。お電話またはご来店の際にお申しつけください。<br>
+        ※ 本サイトはデザインサンプルです。掲載のコース内容・価格はすべて架空のものです。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ occasions ============ -->
+  <section class="sect sect--dark wrap">
+    <div class="inner">
+      <div class="shead">
+        <span class="shead__en" data-split>Occasions</span>
+        <span class="shead__jp" data-reveal data-delay="1">記念日・会食・貸切</span>
+      </div>
+
+      <div class="duo">
+        <figure class="duo__fig" data-zoom>
+          <img src="assets/img/dish/sorbet.jpg" alt="季節の果実とヴァニラのソルベ" loading="lazy">
+          <figcaption>Dessert message plate</figcaption>
+        </figure>
+        <div>
+          <dl class="info" data-reveal data-delay="2">
+            <div>
+              <dt>Message</dt>
+              <dd>デザートプレートへのメッセージをお入れできます。<br>ご予約時にお申しつけください（無料）。</dd>
+            </div>
+            <div>
+              <dt>Private</dt>
+              <dd>奥に4名様までの個室がございます。<br>ご予約状況により承れない場合がございます。</dd>
+            </div>
+            <div>
+              <dt>Charter</dt>
+              <dd>12〜24名様で貸切を承ります。<br>お料理・お飲み物の内容はご相談ください。</dd>
+            </div>
+            <div>
+              <dt>Allergy</dt>
+              <dd>アレルギー・苦手な食材、健康上の制限がある方も、事前にご相談いただければ可能な限り対応いたします。</dd>
+            </div>
+          </dl>
+          <p data-reveal data-delay="3" style="margin-top:clamp(28px,5vw,40px)">
+            <a class="btn" href="tel:0312345678" data-cursor-text="Call|us">03-1234-5678<i></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ reservation notes ============ -->
+  <section class="sect sect--tight wrap">
+    <div class="inner--narrow">
+      <div class="shead">
+        <span class="shead__en" data-split>Réservation</span>
+        <span class="shead__jp" data-reveal data-delay="1">ご予約について</span>
+      </div>
+      <dl class="info" data-reveal data-delay="2">
+        <div>
+          <dt>Contact</dt>
+          <dd>ご予約・お問い合わせはお電話、またはご来店の際に承ります。<br><a class="en" href="tel:0312345678">03-1234-5678</a></dd>
+        </div>
+        <div>
+          <dt>Hours</dt>
+          <dd>Lunch　11:30–15:00（L.O. 14:00）<br>Dinner　17:30–22:30（L.O. 21:00）</dd>
+        </div>
+        <div>
+          <dt>Closed</dt>
+          <dd>水曜日・第2火曜日</dd>
+        </div>
+        <div>
+          <dt>Cancel</dt>
+          <dd>やむを得ないご事情でのキャンセルは、当日でもキャンセル料はいただいておりません。ご都合が変わりましたら、どうぞお早めにご一報ください。</dd>
+        </div>
+      </dl>
+      <p data-reveal data-delay="3" style="margin-top:clamp(32px,6vw,46px);text-align:center">
+        <a class="btn" href="index.html#access" data-cursor-text="View|access">Access &amp; Info<i></i></a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="inner">
+    <div class="footer__top">
+      <div>
+        <p class="footer__logo">L'atelier<small>ラトリエ キュイジーヌ フランセーズ</small></p>
+        <p class="footer__addr">
+          〒154-0023 東京都世田谷区若林3-18-6 1F<br>
+          Lunch 11:30–15:00 ／ Dinner 17:30–22:30<br>
+          定休日：水曜日・第2火曜日
+        </p>
+        <a class="footer__tel" href="tel:0312345678">03-1234-5678</a>
+      </div>
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="concept.html">Concept</a>
+        <a href="menu.html">Menu</a>
+        <a href="course.html">Course</a>
+        <a href="index.html#access">Access</a>
+      </nav>
+    </div>
+    <p class="disclaim" style="margin-top:clamp(36px,7vw,56px)">
+      ※ 本サイトはデザインサンプルです。店名・人物名・住所・電話番号・価格などはすべて架空のものであり、実在の店舗・人物とは関係ありません。
+    </p>
+    <div class="footer__bottom">
+      <span>© L'atelier Cuisine Française — Sample Site</span>
+      <span>Designed as a website renewal proposal</span>
+    </div>
+  </div>
+</footer>
+
+<div class="cta-fixed">
+  <a href="tel:0312345678">Tel. 03-1234-5678</a>
+  <a href="index.html#access">Access</a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
